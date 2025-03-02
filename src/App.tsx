@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Bot, BarChart2, Menu, X } from 'lucide-react';
-import ChatInterface from './components/ChatInterface';
-import WeatherWidget from './components/WeatherWidget';
+import { useState } from "react";
+import { Bot, BarChart2, Menu, X } from "lucide-react";
+import ChatInterface from "./components/ChatInterface";
+import WeatherWidget from "./components/WeatherWidget";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,9 +19,9 @@ function App() {
       </div>
 
       {/* Sidebar */}
-      <div 
+      <div
         className={`fixed lg:static inset-y-0 left-0 z-40 w-64 bg-white shadow-lg transform ${
-          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+          sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0 transition-transform duration-300 ease-in-out`}
       >
         <div className="p-6">
@@ -29,17 +29,17 @@ function App() {
             <Bot className="h-8 w-8 text-blue-600 mr-2" />
             <h1 className="text-2xl font-bold text-gray-800">Ollama Chat</h1>
           </div>
-          
+
           <nav className="space-y-2">
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="flex items-center p-3 text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition-colors"
             >
               <Bot className="h-5 w-5 mr-3" />
               <span className="font-medium">Chat</span>
             </a>
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="flex items-center p-3 text-gray-700 rounded-lg hover:bg-blue-50 hover:text-blue-700 transition-colors"
             >
               <BarChart2 className="h-5 w-5 mr-3" />
@@ -65,7 +65,7 @@ function App() {
 
       {/* Overlay for mobile sidebar */}
       {sidebarOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"
           onClick={() => setSidebarOpen(false)}
         />
