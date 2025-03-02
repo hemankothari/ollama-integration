@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "t/Tpfkh3VG6sNIPWhhXwdQOGdv/iqvHQTQZ3SxjBYwE=",
+  "Source": "OllamaIntegration",
+  "BasePath": "_content/OllamaIntegration",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
